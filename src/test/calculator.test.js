@@ -1,4 +1,4 @@
-const Calculator = require('../calculator.js')
+const Calculator = require("../calculator.js");
 
 //이런식으로 노가다성으로 적을수도있지만 관련된 describe로 관련 테스트들을 묶어서 적을수도있음
 // test('add',()=>{})
@@ -28,17 +28,64 @@ const Calculator = require('../calculator.js')
 //   })
 // })
 
-describe('Calculator', () => {
-  it('inits with 0', () => {
+describe("Calculator", () => {
+  let cal;
+  //Calculator는 매 test 수행전마다 새로운 intance를 생성한다.
+  //각각의 테스트는 독립적이여야하기때문
+  beforeEach(() => {
+    cal = new Calculator();
+  });
+
+  it("inits with 0", () => {
     //테스트 코드 작성
-    const cal = new Calculator()
-    expect(cal.value).toBe(0)
-  })
+    expect(cal.value).toBe(0);
+  });
 
-  it('sets', () => {
-    const cal = new Calculator()
-    cal.set(9)
+  it("sets", () => {
+    cal.set(9);
+    expect(cal.value).toBe(9);
+  });
+  it("clear", () => {
+    cal.set(9);
+    cal.clear();
+    expect(cal.value).toBe(0);
+  });
+  it("adds", () => {
+    cal.set(1);
+    cal.add(2);
+    expect(cal.value).toBe(3);
+  });
+  //add함수에서 100이상수에 대한 예외처리하는방법
+  it("add should throw an error if value is greater than 100", () => {
+    expect(() => {
+      cal.add(101);
+    }).toThrow("Value can not be greater than 100");
+  });
+  it("subtracts", () => {
+    cal.subtract(1);
+    expect(cal.value).toBe(-1);
+  });
+  it("multiplies", () => {
+    cal.set(5);
+    cal.multiply(4);
+    expect(cal.value).toBe(20);
+  });
 
-    expect(cal.value).toBe(9)
-  })
-})
+  //나두기는 좀더 나눠야하기때문에 내부적으로 grouping한다
+  describe("divides", () => {
+    it("0 / 0 === NaN", () => {
+      cal.divide(0);
+      expect(cal.value).toBe(NaN);
+    });
+    it("1/0 === Infinity", () => {
+      cal.set(1);
+      cal.divide(0);
+      expect(cal.value).toBe(Infinity);
+    });
+    it("4/4 === 1", () => {
+      cal.set(4);
+      cal.divide(4);
+      expect(cal.value).toBe(1);
+    });
+  });
+});

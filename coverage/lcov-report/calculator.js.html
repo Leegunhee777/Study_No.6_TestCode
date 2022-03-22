@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>21/35</span>
+                <span class='fraction'>35/35</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">28.57% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/35</span>
+                <span class='fraction'>35/35</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -100,6 +100,18 @@
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -108,28 +120,16 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -142,29 +142,29 @@
     this.value = num;
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  clear() {</span>
-<span class="cstat-no" title="statement not covered" >    this.value = 0;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  clear() {
+    this.value = 0;
+  }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  add(num) {</span>
-<span class="cstat-no" title="statement not covered" >    const sum = this.value + num;</span>
-<span class="cstat-no" title="statement not covered" >    if (sum &gt; 100) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error('Value can not be greater than 100');</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >    this.value = sum;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  add(num) {
+    const sum = this.value + num;
+    if (sum &gt; 100) {
+      throw new Error("Value can not be greater than 100");
+    }
+    this.value = sum;
+  }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  subtract(num) {</span>
-<span class="cstat-no" title="statement not covered" >    this.value = this.value - num;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  subtract(num) {
+    this.value = this.value - num;
+  }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  multiply(num) {</span>
-<span class="cstat-no" title="statement not covered" >    this.value = this.value * num;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  multiply(num) {
+    this.value = this.value * num;
+  }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  divide(num) {</span>
-<span class="cstat-no" title="statement not covered" >    this.value = this.value / num;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  divide(num) {
+    this.value = this.value / num;
+  }
 }
 &nbsp;
 module.exports = Calculator;
@@ -175,7 +175,7 @@ module.exports = Calculator;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Mon Mar 21 2022 03:27:21 GMT+0900 (대한민국 표준시)
+                at Tue Mar 22 2022 11:22:28 GMT+0900 (대한민국 표준시)
             </div>
         <script src="prettify.js"></script>
         <script>
