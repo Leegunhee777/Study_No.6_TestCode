@@ -57,6 +57,9 @@ describe("Calculator", () => {
   });
   //add함수에서 100이상수에 대한 예외처리하는방법
   it("add should throw an error if value is greater than 100", () => {
+    //예상되는 에러를 명시하여 적어줄수도있음,
+    //에러를 예상하는 case를 적을땐 expect안에 callback으로 작성해주고
+    //expect(() => { cal.add(101);}) 해당 콜백을 실행했을때 던져지는 에러를 적어서 .toThrow안에 명시해주면됨
     expect(() => {
       cal.add(101);
     }).toThrow("Value can not be greater than 100");
