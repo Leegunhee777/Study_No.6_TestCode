@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1647915748508" clover="3.2.0">
-  <project timestamp="1647915748508" name="All files">
-    <metrics statements="40" coveredstatements="40" conditionals="9" coveredconditionals="9" methods="8" coveredmethods="8" elements="57" coveredelements="57" complexity="0" loc="40" ncloc="40" packages="1" files="2" classes="2"/>
+<coverage generated="1647919933542" clover="3.2.0">
+  <project timestamp="1647919933542" name="All files">
+    <metrics statements="48" coveredstatements="48" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="9" elements="69" coveredelements="69" complexity="0" loc="48" ncloc="48" packages="1" files="3" classes="3"/>
     <file name="add.js" path="/Users/leegunhee/Desktop/Study_No.6_TestCode/src/add.js">
       <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -9,6 +9,17 @@
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
+    </file>
+    <file name="async.js" path="/Users/leegunhee/Desktop/Study_No.6_TestCode/src/async.js">
+      <metrics statements="8" coveredstatements="8" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <line num="1" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
     </file>
     <file name="calculator.js" path="/Users/leegunhee/Desktop/Study_No.6_TestCode/src/calculator.js">
       <metrics statements="35" coveredstatements="35" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
