@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648430290448" clover="3.2.0">
-  <project timestamp="1648430290448" name="All files">
-    <metrics statements="112" coveredstatements="108" conditionals="23" coveredconditionals="23" methods="16" coveredmethods="15" elements="151" coveredelements="146" complexity="0" loc="112" ncloc="112" packages="5" files="8" classes="8"/>
+<coverage generated="1648484264174" clover="3.2.0">
+  <project timestamp="1648484264174" name="All files">
+    <metrics statements="141" coveredstatements="133" conditionals="27" coveredconditionals="27" methods="19" coveredmethods="17" elements="187" coveredelements="177" complexity="0" loc="141" ncloc="141" packages="6" files="10" classes="10"/>
     <package name="src">
       <metrics statements="48" coveredstatements="48" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="9"/>
       <file name="add.js" path="/Users/leegunhee/Desktop/Study_No.6_TestCode/src/add.js">
@@ -151,6 +151,44 @@
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.mock.user">
+      <metrics statements="29" coveredstatements="25" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
+      <file name="user_client.js" path="/Users/leegunhee/Desktop/Study_No.6_TestCode/src/mock/user/user_client.js">
+        <metrics statements="9" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+      <file name="user_service.js" path="/Users/leegunhee/Desktop/Study_No.6_TestCode/src/mock/user/user_service.js">
+        <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
   </project>

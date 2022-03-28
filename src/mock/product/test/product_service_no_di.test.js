@@ -1,5 +1,5 @@
-const ProductClient = require("../product_client.js");
-const ProductService = require("../product_service_no_di.js");
+const ProductClient = require('../product_client.js');
+const ProductService = require('../product_service_no_di.js');
 
 // describe("ProductService", () => {
 //   let productService;
@@ -38,12 +38,12 @@ const ProductService = require("../product_service_no_di.js");
 //그럼 productService.fetchAvailableItems() 내부에서 사용되는
 //ProductClient도 실제 ProductClient가 사용되는것이아니라
 //여기서 끌어 가져와 mock화한 ProductClient로 적용되어 테스팅된다
-jest.mock("../product_client.js"); //모듈 전체를 mock을 해준거임
+jest.mock('../product_client.js'); //모듈 전체를 mock을 해준거임
 
-describe("ProductService", () => {
+describe('ProductService', () => {
   const fetchItems = jest.fn(async () => [
-    { item: "milk", available: true },
-    { item: "banana", available: false },
+    { item: 'milk', available: true },
+    { item: 'banana', available: false },
   ]);
   ProductClient.mockImplementation(() => {
     return {
@@ -60,8 +60,8 @@ describe("ProductService", () => {
     //mock을 매 테스트마다 clear해주는 option을 설정했기떄문에(  clearMocks: true,), 수동으로 초기화안해줘도됨
   });
 
-  it("should filter out only available items", async () => {
+  it('should filter out only available items', async () => {
     const items = await productService.fetchAvailableItems();
-    expect(items).toEqual([{ item: "milk", available: true }]);
+    expect(items).toEqual([{ item: 'milk', available: true }]);
   });
 });
